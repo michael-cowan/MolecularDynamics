@@ -12,7 +12,7 @@ from time import time
 
 
 
-# All values taken as estimates mainly from [Lecture 2, slide 3]
+# All values taken as estimates to represent Argon atoms in the gaseous phase
 eps = 1.65E-21        # J/molec
 sigma = 3.40E-10      # m
 kb = 1.38064852E-23   # J/(molec*K)
@@ -68,7 +68,7 @@ def initialize():
 
     for i in xrange(n):
         vel[0, i] -= px
-        vel[1, i] -= py                                         #Shifts center-of-mass momentum to 0 [Lecture 11, slide 29]
+        vel[1, i] -= py                                         #Shifts center-of-mass momentum to 0
 
     norm_x = ((1.0 / (2 * n)) * ((vel[0] ** 2).sum()))          #Divide by 2N degrees of freedom
     norm_y = ((1.0 / (2 * n)) * ((vel[1] ** 2).sum())) 
@@ -86,7 +86,7 @@ def initialize():
 
 
 
-#LJ Pairwise additive force [Lecture 11, slide 24] [Lecture 13, slide 9]
+#LJ Pairwise additive force
 def force(pos):
     f = np.zeros([2,n])
     potential = 0
@@ -406,7 +406,7 @@ def run(steps = 500, blocks = 100):
 
 
     ### Runge-Kutta ###
-    start_runge_kutta=time()
+    start_runge_kutta = time()
 
     pos3, study3, en3, gr_avg3, ddr = sim_runge_kutta(steps, blocks)
 
