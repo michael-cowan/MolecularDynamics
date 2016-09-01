@@ -1,6 +1,5 @@
-#### Molecular Dynamics (MD)
+# Molecular Dynamics (MD) - 2D_LJ_MD.py
 
-# 2D_LJ_MD.py
 Coded a molecular dynamics simulation that models Lennard-Jones particles with periodic boundaries. 
 
 ## Integration Algorithms Used
