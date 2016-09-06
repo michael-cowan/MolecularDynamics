@@ -3,6 +3,7 @@
 ### 2D_LJ_MD.py
 
 - Molecular dynamics simulation that models Lennard-Jones particles with periodic boundaries
+- Coded in Python 2.7
 
 ##### Integration Algorithms Used
 
