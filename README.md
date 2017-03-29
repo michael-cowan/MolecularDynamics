@@ -1,4 +1,4 @@
-## Molecular Dynamics (MD)
+## MolecularDynamics (MD)
 
 ### 2D_LJ_MD.py
 
